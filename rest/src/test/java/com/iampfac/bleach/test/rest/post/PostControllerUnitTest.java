@@ -51,4 +51,11 @@ public class PostControllerUnitTest {
 		mvc.perform(request).andExpect(statusToBeOk);
 	}
 
+	@Test
+	public void getPostsReturnsJsonContent() throws Exception {
+		final MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/posts");
+		final ResultMatcher contentToBeJson = MockMvcResultMatchers.content().contentType("application/json;charset=UTF-8");
+
+		mvc.perform(request).andExpect(contentToBeJson);
+	}
 }
