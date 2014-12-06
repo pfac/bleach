@@ -3,7 +3,7 @@
   <artifactId>bleach-data</artifactId>
   <packaging>pom</packaging>
   <parent>
-    <groupId>com.iampfac</groupId>
+    <groupId>com.iampfac.bleach</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <artifactId>bleach</artifactId>
     <relativePath>..</relativePath>
