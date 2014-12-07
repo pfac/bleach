@@ -6,13 +6,10 @@ import org.apache.commons.lang3.RandomUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import com.iampfac.bleach.core.post.Post;
 import com.iampfac.bleach.data.jpa.post.JpaAdapterPostRepository;
@@ -20,32 +17,13 @@ import com.iampfac.bleach.data.jpa.post.PostJpaEntity;
 import com.iampfac.bleach.data.jpa.post.PostJpaRepository;
 import com.iampfac.bleach.test.core.post.PostBuilder;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {
-	JpaAdapterPostRepositoryUnitTest.TextContext.class
-})
+@RunWith(MockitoJUnitRunner.class)
 public class JpaAdapterPostRepositoryUnitTest {
 
-	@Configuration
-	@ComponentScan("com.iampfac.bleach.data.jpa.post")
-	protected static class TextContext {
-
-		@Bean
-		public PostJpaRepository jpaRepository() {
-			return Mockito.mock(PostJpaRepository.class);
-		}
-
-		@Bean
-		public JpaAdapterPostRepository repository(PostJpaRepository jpaRepository) {
-			return new JpaAdapterPostRepository(jpaRepository);
-		}
-
-	}
-
-	@Autowired
+	@Mock
 	private PostJpaRepository jpaRepository;
 
-	@Autowired
+	@InjectMocks
 	private JpaAdapterPostRepository repository;
 
 	@Test

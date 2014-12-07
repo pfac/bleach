@@ -4,7 +4,6 @@ import org.apache.commons.lang3.RandomUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import com.iampfac.bleach.core.post.Post;
 
@@ -53,11 +52,10 @@ public class PostUnitTest {
 	}
 
 	@Test
-	public void equalsObject_callsEqualsPostIfIsInstanceOfPost() {
+	public void equalsObject_returnsFalseIfIsPostButDifferent() {
 		final Object obj = post;
-		final Object other = Mockito.spy(post());
-		obj.equals(other);
-		Mockito.verify(other).equals((Post) other);
+		final Object other = post();
+		Assert.assertFalse(obj.equals(other));
 	}
 
 	@Test
