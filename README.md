@@ -1,6 +1,8 @@
 Bleach
 ======
 
+[![Build Status](https://travis-ci.org/pfac/bleach.svg?branch=master)](https://travis-ci.org/pfac/bleach)
+
 A blog system with a beautifully clean architecture.
 
 ## License
