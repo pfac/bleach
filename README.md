@@ -3,7 +3,7 @@ Bleach
 
 [![Build Status](https://travis-ci.org/pfac/bleach.svg?branch=master)](https://travis-ci.org/pfac/bleach)
 [![Coverage Status](https://img.shields.io/coveralls/pfac/bleach.svg)](https://coveralls.io/r/pfac/bleach?branch=master)
-[![VersionEye](http://img.shields.io/versioneye/d/pfac/bleach.svg)](https://www.versioneye.com/user/projects/54850abaf607b608e3000025#dialog_dependency_badge)
+[![Dependency Status](https://www.versioneye.com/user/projects/54850abaf607b608e3000025/badge.svg)](https://www.versioneye.com/user/projects/54850abaf607b608e3000025)
 
 A blog system with a beautifully clean architecture.
 
