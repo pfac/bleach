@@ -1,10 +1,10 @@
 package com.iampfac.bleach.data.jpa.post;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
-
-import org.springframework.data.annotation.Id;
 
 import com.iampfac.bleach.core.post.Post;
 
@@ -14,6 +14,7 @@ public class PostJpaEntity {
 
 	@Id
 	@GeneratedValue
+	@Column(name = "id")
 	private Long id;
 
 	public PostJpaEntity() {
