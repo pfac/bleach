@@ -35,6 +35,7 @@
     <coveralls.maven.version>4.2.0</coveralls.maven.version>
     <maven.compiler.version>3.5.1</maven.compiler.version>
     <maven.jar.version>3.0.0</maven.jar.version>
+    <versioneye.maven.version>3.9.2</versioneye.maven.version>
   </properties>
   
   <dependencyManagement>
@@ -260,6 +261,11 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
         <version>2.2</version>
+      </plugin>
+      <plugin>
+        <groupId>com.versioneye</groupId>
+        <artifactId>versioneye-maven-plugin</artifactId>
+        <version>${versioneye.maven.version}</version>
       </plugin>
     </plugins>
   </build>
