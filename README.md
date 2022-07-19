@@ -1,9 +1,9 @@
 Bleach
 ======
 
-[![Build Status](https://travis-ci.org/pfac/bleach.svg?branch=master)](https://travis-ci.org/pfac/bleach)
-[![Coverage Status](https://img.shields.io/coveralls/pfac/bleach.svg)](https://coveralls.io/r/pfac/bleach?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/54850abaf607b608e3000025/badge.svg)](https://www.versioneye.com/user/projects/54850abaf607b608e3000025)
+> _**This project is now retired**._
+>
+> _I created this project back in 2014 to be a reference for me and the community. I have long since stopped working with Java in general and Spring in particular._
 
 A blog system with a beautifully clean architecture.
 
